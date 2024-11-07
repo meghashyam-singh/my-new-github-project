@@ -1,2 +1,2 @@
 # my-new-github-project
-practicing the github
+practicing the github.
