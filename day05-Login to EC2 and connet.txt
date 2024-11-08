@@ -1,0 +1,55 @@
+one way of login to ec2 instance and connect:
+-----------------------------------------------
+goto AWS console
+EC2
+click in instances
+click on instance id
+connect
+scroll down and connect
+it will come.
+
+another way of login to EC@ instance and connect. ( prefer this, stick to this) this is CLI method. (command line interface)
+---------------------------------------------------------------------------------
+for this method we need terminal. each software different terminals. 
+for windows we can use command prompt, putty, moboxtream. 
+gofor moboxtream
+new terminal
+command 
+ssh ubuntu@ipadress of instance
+it says give privatekey adrees. then
+ssh -i give path of keyvalue/keyvaluename ubuntu@ipadress
+if it says permissions are too open. then command-chmod 600 followed by location and run
+then you will be logged into instance.
+
+create some file. touch filename enter
+check that file. ls enter
+
+
+
+how to delete instance:
+-------------------------
+goto console
+select instnace
+instance state->stop instance and the terminate instance.
+
+AWS CLI: ( it means doing every thing through command prompt)
+----------------------------------------------------------------
+
+dowload aws CLI(if you dont have in your system)
+open aws consoleclick on profile
+click security cresentials
+scroll down
+access keys
+create access keys
+goto command prompt
+command aws version. you will get some list..then it is confirmed aws cli installed)
+command aws configure. (it asks access keys) (copy and paste from console)
+keys :
+secret krys: 
+region: us-east-1
+file :json
+
+create one s3 bucket in aws consile
+create - in command prompt aws s3 mb s3://bucket name
+check - in command prompt check aws s3 ls(you will get buckets in s3)
+delete - in command prompt aws s3 rb s3://bucket name
